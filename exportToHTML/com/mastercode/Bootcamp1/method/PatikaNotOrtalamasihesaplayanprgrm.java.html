@@ -1,0 +1,48 @@
+<html>
+<head>
+<title>PatikaNotOrtalamasihesaplayanprgrm.java</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<style type="text/css">
+.s0 { color: #cf8e6d;}
+.s1 { color: #bcbec4;}
+.s2 { color: #bcbec4;}
+.s3 { color: #6aab73;}
+.s4 { color: #2aacb8;}
+</style>
+</head>
+<body bgcolor="#1e1f22">
+<table CELLSPACING=0 CELLPADDING=5 COLS=1 WIDTH="100%" BGCOLOR="#606060" >
+<tr><td><center>
+<font face="Arial, Helvetica" color="#000000">
+PatikaNotOrtalamasihesaplayanprgrm.java</font>
+</center></td></tr></table>
+<pre><span class="s0">import </span><span class="s1">java</span><span class="s2">.</span><span class="s1">util</span><span class="s2">.</span><span class="s1">Scanner</span><span class="s2">;</span>
+<span class="s0">public class </span><span class="s1">PatikaNotOrtalamasihesaplayanprgrm </span><span class="s2">{</span>
+    <span class="s0">public static void </span><span class="s1">main</span><span class="s2">(</span><span class="s1">String</span><span class="s2">[] </span><span class="s1">args</span><span class="s2">) {</span>
+
+        <span class="s0">int </span><span class="s1">matematik</span><span class="s2">, </span><span class="s1">fizik</span><span class="s2">, </span><span class="s1">kimya</span><span class="s2">, </span><span class="s1">turkce</span><span class="s2">, </span><span class="s1">tarih</span><span class="s2">, </span><span class="s1">muzik</span><span class="s2">;</span>
+        <span class="s1">Scanner scan </span><span class="s2">= </span><span class="s0">new </span><span class="s1">Scanner</span><span class="s2">(</span><span class="s1">System</span><span class="s2">.</span><span class="s1">in</span><span class="s2">);</span>
+
+        <span class="s1">System</span><span class="s2">.</span><span class="s1">out</span><span class="s2">.</span><span class="s1">print</span><span class="s2">(</span><span class="s3">&quot;Matematik notunuzu giriniz : &quot;</span><span class="s2">);</span>
+        <span class="s1">matematik </span><span class="s2">= </span><span class="s1">scan</span><span class="s2">.</span><span class="s1">nextInt</span><span class="s2">();</span>
+        <span class="s1">System</span><span class="s2">.</span><span class="s1">out</span><span class="s2">.</span><span class="s1">print</span><span class="s2">(</span><span class="s3">&quot;Fizik notunuzu giriniz : &quot;</span><span class="s2">);</span>
+        <span class="s1">fizik </span><span class="s2">= </span><span class="s1">scan</span><span class="s2">.</span><span class="s1">nextInt</span><span class="s2">();</span>
+        <span class="s1">System</span><span class="s2">.</span><span class="s1">out</span><span class="s2">.</span><span class="s1">print</span><span class="s2">(</span><span class="s3">&quot;Kimya notunuzu giriniz : &quot;</span><span class="s2">);</span>
+        <span class="s1">kimya </span><span class="s2">= </span><span class="s1">scan</span><span class="s2">.</span><span class="s1">nextInt</span><span class="s2">();</span>
+        <span class="s1">System</span><span class="s2">.</span><span class="s1">out</span><span class="s2">.</span><span class="s1">print</span><span class="s2">(</span><span class="s3">&quot;turkce notunuzu giriniz : &quot;</span><span class="s2">);</span>
+        <span class="s1">turkce </span><span class="s2">= </span><span class="s1">scan</span><span class="s2">.</span><span class="s1">nextInt</span><span class="s2">();</span>
+        <span class="s1">System</span><span class="s2">.</span><span class="s1">out</span><span class="s2">.</span><span class="s1">print</span><span class="s2">(</span><span class="s3">&quot;tarih notunuzu giriniz : &quot;</span><span class="s2">);</span>
+        <span class="s1">tarih </span><span class="s2">= </span><span class="s1">scan</span><span class="s2">.</span><span class="s1">nextInt</span><span class="s2">();</span>
+        <span class="s1">System</span><span class="s2">.</span><span class="s1">out</span><span class="s2">.</span><span class="s1">print</span><span class="s2">(</span><span class="s3">&quot;muzik notunuzu giriniz : &quot;</span><span class="s2">);</span>
+        <span class="s1">muzik </span><span class="s2">= </span><span class="s1">scan</span><span class="s2">.</span><span class="s1">nextInt</span><span class="s2">();</span>
+        <span class="s0">int </span><span class="s1">toplam </span><span class="s2">= (</span><span class="s1">matematik</span><span class="s2">+</span><span class="s1">fizik</span><span class="s2">+</span><span class="s1">kimya</span><span class="s2">+</span><span class="s1">turkce</span><span class="s2">+</span><span class="s1">tarih</span><span class="s2">+</span><span class="s1">muzik</span><span class="s2">);</span>
+        <span class="s0">double </span><span class="s1">NotOrtalamaniz </span><span class="s2">= </span><span class="s1">toplam </span><span class="s2">/ </span><span class="s4">6.0</span><span class="s2">;</span>
+        <span class="s1">System</span><span class="s2">.</span><span class="s1">out</span><span class="s2">.</span><span class="s1">println</span><span class="s2">(</span><span class="s3">&quot;Not Ortalamaniz : &quot; </span><span class="s2">+ </span><span class="s1">NotOrtalamaniz</span><span class="s2">);</span>
+        <span class="s1">String Sonuc </span><span class="s2">= (</span><span class="s1">NotOrtalamaniz</span><span class="s2">&gt;</span><span class="s4">60</span><span class="s2">) ? </span><span class="s3">&quot;Gectiniz&quot; </span><span class="s2">: </span><span class="s3">&quot;Kaldiniz&quot;</span><span class="s2">;</span>
+        <span class="s1">System</span><span class="s2">.</span><span class="s1">out</span><span class="s2">.</span><span class="s1">print</span><span class="s2">(</span><span class="s1">Sonuc</span><span class="s2">);</span>
+
+    <span class="s2">}</span>
+<span class="s2">}</span>
+</pre>
+</body>
+</html>

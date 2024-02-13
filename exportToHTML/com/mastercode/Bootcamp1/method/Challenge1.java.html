@@ -1,0 +1,59 @@
+<html>
+<head>
+<title>Challenge1.java</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<style type="text/css">
+.s0 { color: #cf8e6d;}
+.s1 { color: #bcbec4;}
+.s2 { color: #bcbec4;}
+.s3 { color: #2aacb8;}
+.s4 { color: #6aab73;}
+</style>
+</head>
+<body bgcolor="#1e1f22">
+<table CELLSPACING=0 CELLPADDING=5 COLS=1 WIDTH="100%" BGCOLOR="#606060" >
+<tr><td><center>
+<font face="Arial, Helvetica" color="#000000">
+Challenge1.java</font>
+</center></td></tr></table>
+<pre><span class="s0">package </span><span class="s1">com</span><span class="s2">.</span><span class="s1">mastercode</span><span class="s2">.</span><span class="s1">Bootcamp1</span><span class="s2">.</span><span class="s1">method</span><span class="s2">;</span>
+
+<span class="s0">public class </span><span class="s1">Challenge1 </span><span class="s2">{</span>
+    <span class="s0">public static void </span><span class="s1">main</span><span class="s2">(</span><span class="s1">String</span><span class="s2">[] </span><span class="s1">args</span><span class="s2">) {</span>
+        <span class="s1">String mark1 </span><span class="s2">= </span><span class="s1">checkExamMark</span><span class="s2">(</span><span class="s3">87</span><span class="s2">);</span>
+        <span class="s1">String mark2 </span><span class="s2">= </span><span class="s1">checkExamMark</span><span class="s2">(</span><span class="s3">90</span><span class="s2">);</span>
+        <span class="s1">String mark3 </span><span class="s2">= </span><span class="s1">checkExamMark</span><span class="s2">(</span><span class="s3">95</span><span class="s2">);</span>
+        <span class="s1">String mark4 </span><span class="s2">= </span><span class="s1">checkExamMark</span><span class="s2">(</span><span class="s3">45</span><span class="s2">);</span>
+        <span class="s1">String mark5 </span><span class="s2">= </span><span class="s1">checkExamMark</span><span class="s2">(</span><span class="s3">78</span><span class="s2">);</span>
+
+        <span class="s1">System</span><span class="s2">.</span><span class="s1">out</span><span class="s2">.</span><span class="s1">println</span><span class="s2">(</span><span class="s4">&quot;87 -&gt; &quot; </span><span class="s2">+ </span><span class="s1">mark1</span><span class="s2">);</span>
+        <span class="s1">System</span><span class="s2">.</span><span class="s1">out</span><span class="s2">.</span><span class="s1">println</span><span class="s2">(</span><span class="s4">&quot;90 -&gt; &quot; </span><span class="s2">+ </span><span class="s1">mark2</span><span class="s2">);</span>
+        <span class="s1">System</span><span class="s2">.</span><span class="s1">out</span><span class="s2">.</span><span class="s1">println</span><span class="s2">(</span><span class="s4">&quot;95 -&gt; &quot; </span><span class="s2">+ </span><span class="s1">mark3</span><span class="s2">);</span>
+        <span class="s1">System</span><span class="s2">.</span><span class="s1">out</span><span class="s2">.</span><span class="s1">println</span><span class="s2">(</span><span class="s4">&quot;45 -&gt; &quot; </span><span class="s2">+ </span><span class="s1">mark4</span><span class="s2">);</span>
+        <span class="s1">System</span><span class="s2">.</span><span class="s1">out</span><span class="s2">.</span><span class="s1">println</span><span class="s2">(</span><span class="s4">&quot;78 -&gt; &quot; </span><span class="s2">+ </span><span class="s1">mark5</span><span class="s2">);</span>
+
+    <span class="s2">}</span>
+
+    <span class="s0">public static </span><span class="s1">String checkExamMark</span><span class="s2">(</span><span class="s0">int </span><span class="s1">studentScore</span><span class="s2">){</span>
+        <span class="s0">if </span><span class="s2">(</span><span class="s1">studentScore </span><span class="s2">&gt; </span><span class="s3">100</span><span class="s2">) </span><span class="s0">return </span><span class="s4">&quot;Invalid number &quot;</span><span class="s2">;</span>
+
+        <span class="s0">if </span><span class="s2">(</span><span class="s1">studentScore </span><span class="s2">&gt; </span><span class="s3">90 </span><span class="s2">&amp;&amp; </span><span class="s1">studentScore </span><span class="s2">&lt;=</span><span class="s3">100</span><span class="s2">) {</span>
+            <span class="s0">return </span><span class="s4">&quot;A&quot;</span><span class="s2">;</span>
+        <span class="s2">}</span><span class="s0">else if </span><span class="s2">(</span><span class="s1">studentScore </span><span class="s2">&gt; </span><span class="s3">80 </span><span class="s2">&amp;&amp; </span><span class="s1">studentScore </span><span class="s2">&lt;=</span><span class="s3">90</span><span class="s2">) {</span>
+            <span class="s0">return </span><span class="s4">&quot;B&quot;</span><span class="s2">;</span>
+        <span class="s2">}</span><span class="s0">else if </span><span class="s2">(</span><span class="s1">studentScore </span><span class="s2">&gt; </span><span class="s3">70 </span><span class="s2">&amp;&amp; </span><span class="s1">studentScore </span><span class="s2">&lt;= </span><span class="s3">80</span><span class="s2">) {</span>
+            <span class="s0">return </span><span class="s4">&quot;C&quot;</span><span class="s2">;</span>
+        <span class="s2">} </span><span class="s0">else if </span><span class="s2">(</span><span class="s1">studentScore </span><span class="s2">&gt; </span><span class="s3">60 </span><span class="s2">&amp;&amp; </span><span class="s1">studentScore </span><span class="s2">&lt;= </span><span class="s3">70</span><span class="s2">) {</span>
+            <span class="s0">return </span><span class="s4">&quot;D&quot;</span><span class="s2">;</span>
+        <span class="s2">} </span><span class="s0">else if </span><span class="s2">(</span><span class="s1">studentScore </span><span class="s2">&gt; </span><span class="s3">50 </span><span class="s2">&amp;&amp; </span><span class="s1">studentScore </span><span class="s2">&lt;= </span><span class="s3">60 </span><span class="s2">) {</span>
+            <span class="s0">return </span><span class="s4">&quot;E&quot;</span><span class="s2">;</span>
+        <span class="s2">} </span><span class="s0">else</span>
+
+            <span class="s0">return </span><span class="s4">&quot;Failed&quot;</span><span class="s2">;</span>
+
+
+    <span class="s2">}</span>
+<span class="s2">}</span>
+</pre>
+</body>
+</html>
